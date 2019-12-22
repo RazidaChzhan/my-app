@@ -45,12 +45,13 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(2),
       },
 }));
-     
+
+let isChecked = false;
 export default function Profilemenu () {
     
     const [value, setValue] = React.useState(2);
 
-    let isChecked = true;
+    
     const handleChangeRadio = event => {
         setValue(event.target.value);
         console.log('event.target.value', event.target.value);
@@ -215,9 +216,11 @@ return (
                                 </RadioGroup>
                             </FormControl>
                             
-                            <div>
+                            <Lidertext isChecked = {isChecked} />
+
+                            {/* <div>
                                 { isChecked === true ? (<Lidertext/>) : (null)}
-                            </div>
+                            </div> */}
                             
                             <Grid container spacing={1} style={{paddingBottom: 43}}>
                                 <Grid item xs={8}></Grid>

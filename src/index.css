@@ -118,3 +118,9 @@ code {
 .btnsave {
   background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
 }
+
+.getlink {
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  }
