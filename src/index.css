@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.headertext {
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #2FA2BC;
+  padding-top: 5px;
+}
+
+.headerimg {
+  width: 114px;
+  height: 85px;
+  padding-left: 30px;
+}
+
+.footertext {
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  line-height: 25px;
+  color: #7A7A7A;
+}
+
+.footerphone {
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.policy {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration-line: underline !important;
+  color: #2FA2BC !important;
+}
+
+.backgroundimage {
+  background-image: url('./images/background-img-personal-page.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.linktext {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #7A7A7A;
+  margin-left: 20px;
+}
+
+.linkbutton:hover {
+  background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.track {
+  font-size: 18px;
+  line-height: 24px;
+  color: #2FA2BC;
+  margin-top: 10px;
+}
+
+.menuitemtext:active, .menuitemtext:hover {
+  border-left: 5px solid #2FA2BC;
+  color: #802882;
+    /* font-weight: bold; */
+}
+
+.hr {
+    text-shadow: none;
+  }
+.profile {
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    line-height: 32px;                
+    color: #7A7A7A; 
+  }
+
+  .profile:hover {
+  font-weight: bold;
+  border-bottom: 5px solid #2FA2BC; 
+  color: #222222;
+}
+
+.maininformation {
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  line-height: 32px;
+  color: #222222; 
+  margin-left: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btnsave {
+  background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
+}
