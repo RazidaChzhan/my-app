@@ -154,3 +154,11 @@ code {
     color: #7A7A7A;
     text-decoration: none;
   }
+
+  .logoinstagram {
+    width: 30px;
+    height: 30px;
+  }
+  .logoinstagram:active, .logoinstagram:hover {
+    background-image: url('../src/images/logoinstagram.svg');
+  }
