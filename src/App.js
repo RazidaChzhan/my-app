@@ -10,6 +10,7 @@ import AppMainMenu from './components/mainmenu1';
 import SettingsMenu from './components/settingsMenu';
 
 import { Link } from "@material-ui/core";
+import SocialDEsign from "./components/socialDesign";
 
 const packageJSON = [
   {
@@ -39,7 +40,9 @@ export default class App extends Component {
     
     return (
         <div>
+          
           <AppHeader/>
+          {/* <SocialDEsign/> */}
           <ThemeProvider theme={theme}>
           <Container style={{marginLeft: '160px', marginBottom: '20px'}}>
           <h1>Личный кабинет</h1>
@@ -66,9 +69,10 @@ export default class App extends Component {
           </ThemeProvider> 
           
             <Switch>
-            <Route exact path="/" component={AppMainMenu} />
-            <Route exact path="/settings" component={SettingsMenu} />
-          </Switch>
+              <Route exact path="/" component={AppMainMenu} />
+            <Route  path="/settings" component={SettingsMenu} />
+            
+          </Switch>          
           <AppFooter/>
         </div>
      

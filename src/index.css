@@ -124,3 +124,20 @@ code {
   box-sizing: border-box;
   border-radius: 5px;
   }
+
+  .progressBarTxt {
+      font-Size: 32px; 
+      font-family: 'Segoe UI'; 
+      color: '#222222';
+      margin-top: 20px;
+      margin-left: 30px;
+  }
+  
+  .socialdesigntxt {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 59px;
+    color: #222222;
+  }

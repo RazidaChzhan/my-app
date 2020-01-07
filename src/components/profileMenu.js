@@ -47,12 +47,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 let isChecked = false;
-export default function Profilemenu () {
+export default function ProfileMenu () {
     
     const [value, setValue] = React.useState(2);
 
     
-    const handleChangeRadio = event => {
+    const handleChangeRadio = event => { 
         setValue(event.target.value);
         console.log('event.target.value', event.target.value);
         if(event.target.value === 'groupLider'){

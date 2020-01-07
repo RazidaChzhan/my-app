@@ -3,6 +3,7 @@ import { Typography,  Grid } from '@material-ui/core';
 
 import Leftmenu from './leftMenu.js';
 import Profilemenu from './profileMenu.js';
+import SocialNetworks from './socialnetworks.js';
 
 import '../index.css';
 
@@ -20,6 +21,7 @@ export default class SettingsMenu extends React.Component {
                         <Grid item xs={6}
                         style={{backgroundColor: '#ffffff', marginTop: '80px', marginLeft: '31px', borderRadius: '5px'}}>
                             <Profilemenu/>                             
+                            {/* <SocialNetworks/> */}
                         </Grid>
                     </Grid>   
                 </Typography> 
