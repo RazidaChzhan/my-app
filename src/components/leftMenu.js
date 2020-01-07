@@ -5,6 +5,7 @@ import { Route, Router, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
 import ProfileMenu from './profileMenu';
 import SocialNetworks from './socialnetworks';
+import '../index.css';
 
 
 export default class Leftmenu extends React.Component {
@@ -12,19 +13,19 @@ export default class Leftmenu extends React.Component {
         return (
             // <Router>
             <div>           
-            <MenuList style={{color: '#7A7A7A', fontFamily: 'Segoe UI', fontSize: '18px', lineHeight: '24px;'}} >
-                <Link to="/settings/main" style={{ textDecoration: 'none',}}>
+            <MenuList  >
+                <Link className="linktext1" to="/settings/main">
                     <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 10}}>
                     Основная информация
                     </MenuItem>
                 </Link>
-                <Link to="/settings/main" style={{ textDecoration: 'none',}}>
+                <Link className="linktext1" to="/settings/main">
                     <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 10}}>
                     Социальные сети
                     </MenuItem>
                 </Link>
-                <Link to="/settings/main" style={{ textDecoration: 'none',}}>
-                    <MenuItem className="menuitemtext" style={{paddingTop: 20}}>
+                <Link className="linktext1" to="/settings/main">
+                    <MenuItem className="menuitemtext" style={{paddingTop: 10}}>
                     Смена пароля
                     </MenuItem>
                 </Link>                  
