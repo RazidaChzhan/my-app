@@ -22,17 +22,40 @@ export default class SocialNetworks extends React.Component {
                     color: 'rgba(34, 34, 34, 0.55)'}}>Вы можете связать свой профиль с профилями в социальных сетях и сервисах:</p>
                     <hr></hr>
                     <Grid container spacing={1}>
-                        <Grid item xs={3}>
+                        <Grid item xs={4}>
+                            <Grid container>
+                                <Grid item xs={3}>
+                                <img  className="logo" src={logofacebookgrey} alt={logofacebookgrey}></img>
+                                </Grid>
+                                <Grid item xs={3}>
+                                <span >Facebook</span>
+                                </Grid>
+                            </Grid>
                             {/* <FacebookIcon color="disabled"/> Facebook */}
-                            <img src={logofacebookgrey} alt={logofacebookgrey} style={{width: 30, height: 30}}></img> Facebook
+                            
                         </Grid>
-                        <Grid item xs={3}>
-                        <img src={logovkontaktegrey} alt={logovkontaktegrey} style={{width: 30, height: 30}}></img> ВКонтакте
+                        <Grid item xs={4}>
+                        <Grid container>
+                                <Grid item xs={3}>
+                                <img className="logo" src={logovkontaktegrey} alt={logovkontaktegrey}></img>
+                                </Grid>
+                                <Grid item xs={3}>
+                                <span>ВКонтакте</span>
+                                </Grid>
+                            </Grid>
+                         
                            
                         </Grid>
-                        <Grid item xs={3}>
+                        <Grid item xs={4}>
+                        <Grid container>
+                            <Grid item xs={3}>
+                            <img className="logo" src={logoinstagramgrey} alt={logoinstagramgrey}></img> 
+                                </Grid>
+                                <Grid item xs={3}>
+                                <span>instagram</span>
+                                </Grid>
                         {/* <InstagramIcon color="disabled"/> instagram */}
-                        <img className="logoinstagram" src={logoinstagramgrey} alt={logoinstagramgrey}></img> instagram
+                        </Grid>
                         </Grid>
                     </Grid>
                 </Grid>

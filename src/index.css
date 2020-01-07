@@ -155,10 +155,8 @@ code {
     text-decoration: none;
   }
 
-  .logoinstagram {
+  .logo {
     width: 30px;
     height: 30px;
   }
-  .logoinstagram:active, .logoinstagram:hover {
-    background-image: url('../src/images/logoinstagram.svg');
-  }
+  
