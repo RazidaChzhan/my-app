@@ -76,6 +76,14 @@ code {
   
 }
 
+.activebutton {
+  background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
 .track {
   font-size: 18px;
   line-height: 24px;
@@ -83,11 +91,18 @@ code {
   margin-top: 10px;
 }
 
-.menuitemtext:active, .menuitemtext:hover {
+.active-menu-item-text {
   border-left: 5px solid #2FA2BC;
   color: #802882;
-    /* font-weight: bold; */
+  font-weight: bold;
 }
+
+.menuitemtext:hover, .menuitemtext:active {
+  border-left: 5px solid #2FA2BC;
+  color: #802882;
+  font-weight: bold;
+}
+
 
 .menuitemtext {
   border-bottom: 2px solid #D2D2D2;
@@ -104,11 +119,17 @@ code {
     color: #7A7A7A; 
   }
 
-  .profile:hover {
+  /* .profile:hover {
   font-weight: bold;
   border-bottom: 5px solid #2FA2BC; 
   color: #222222;
-}
+} */
+
+.active {
+    font-weight: bold;
+    border-bottom: 5px solid #2FA2BC; 
+    color: #222222;
+  }
 
 .maininformation {
   font-family: 'Segoe UI';

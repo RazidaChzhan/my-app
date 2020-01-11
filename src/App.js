@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink, Switch, Route } from "react-router-dom";
+import { NavLink, Switch, Route, Redirect } from "react-router-dom";
 import {Container } from '@material-ui/core';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 
@@ -9,13 +9,16 @@ import AppFooter from './components/footer';
 import AppMainMenu from './components/mainmenu1';
 import SettingsMenu from './components/settingsMenu';
 
+
+
 import { Link } from "@material-ui/core";
 import SocialDEsign from "./components/socialDesign";
+import './index.css';
 
 const packageJSON = [
   {
     name: "Профиль",
-    path: "/"
+    path: "/profile"
   },
   {
     name: "Настройки",
@@ -54,7 +57,8 @@ export default class App extends Component {
               key={index}
               component={NavLink}
               exact={item.name === "Home" ? true : false}
-              to={item.path}
+              to={item.path}             
+              activeClassName="active"
               className="profile"
               underline="none"
               color="textSecondary"
@@ -69,9 +73,10 @@ export default class App extends Component {
           </ThemeProvider> 
           
             <Switch>
-              <Route exact path="/" component={AppMainMenu} />
-            <Route  path="/settings" component={SettingsMenu} />
-            
+              <Route name="MainMenu" exact path="/profile" component={AppMainMenu} />
+              <Route  name="SettingsMenu" path="/settings" component={SettingsMenu} />
+              <Redirect to="/profile"></Redirect>
+
           </Switch>          
           <AppFooter/>
         </div>

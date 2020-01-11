@@ -33,16 +33,18 @@ export default function MainMenu() {
         <Typography>
         <Container>
         <h1 style={{marginLeft: '20px'}}>Личный кабинет</h1>
-        <Tabs
+        {/* <Tabs
         value={value}
         indicatorColor="primary"
-        textColor="secondary"
+        textColor="secondary" 
         onChange={handleChange}
-        aria-label="disabled tabs example">
-            <Tab label="Профиль" style={{textTransform: 'capitalize', fontFamily: 'Segoe UI', fontSize: '24px'}}/>
-            <Tab label="Настройки" style={{textTransform: 'capitalize', fontFamily: 'Segoe UI', fontSize: '24px'}}>
-            </Tab>
-        </Tabs>
+        aria-label="disabled tabs example"> */}
+          {/* <Link to='/profile' activeClassName="active" style={{fontFamily: 'Segoe UI', fontSize: 24}} > Профиль </Link>
+          <Link to='/personalsettings' activeClassName="active"> Настройки </Link> */}
+            {/* <Tab label="Профиль" style={{textTransform: 'capitalize', fontFamily: 'Segoe UI', fontSize: '24px'}}/>
+            <Tab label="Настройки" style={{textTransform: 'capitalize', fontFamily: 'Segoe UI', fontSize: '24px'}}> */}
+            {/* </Tab>
+        </Tabs> */}
         </Container>    
         </Typography>
      </ThemeProvider>    

@@ -31,8 +31,7 @@ export default class SocialNetworks extends React.Component {
                                 <span >Facebook</span>
                                 </Grid>
                             </Grid>
-                            {/* <FacebookIcon color="disabled"/> Facebook */}
-                            
+                           
                         </Grid>
                         <Grid item xs={4}>
                         <Grid container>
@@ -42,8 +41,7 @@ export default class SocialNetworks extends React.Component {
                                 <Grid item xs={3}>
                                 <span>ВКонтакте</span>
                                 </Grid>
-                            </Grid>
-                         
+                            </Grid>                         
                            
                         </Grid>
                         <Grid item xs={4}>
@@ -54,7 +52,6 @@ export default class SocialNetworks extends React.Component {
                                 <Grid item xs={3}>
                                 <span>instagram</span>
                                 </Grid>
-                        {/* <InstagramIcon color="disabled"/> instagram */}
                         </Grid>
                         </Grid>
                     </Grid>

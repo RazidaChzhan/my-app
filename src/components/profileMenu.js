@@ -218,10 +218,7 @@ return (
                             
                             <Lidertext isChecked = {isChecked} />
 
-                            {/* <div>
-                                { isChecked === true ? (<Lidertext/>) : (null)}
-                            </div> */}
-                            
+                                                     
                             <Grid container spacing={1} style={{paddingBottom: 43}}>
                                 <Grid item xs={8}></Grid>
                                 <Grid item xs={4}>
