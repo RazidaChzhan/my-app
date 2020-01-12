@@ -6,7 +6,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Segoe UI'
     monospace;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -15,15 +15,16 @@ code {
   font-family: 'Segoe UI';
   font-size: 15px;
   line-height: 20px;
-  padding-left: 10px;
-  border-left: 3px solid #2FA2BC;
-  padding-top: 5px;
+  padding-left: 20px;
+  padding-top: 0px;
 }
 
 .headerimg {
   width: 114px;
   height: 85px;
-  padding-left: 30px;
+  padding-left: 10px;
+  
+  /* padding-left: 30px; */
 }
 
 .footertext {
@@ -117,6 +118,7 @@ code {
     font-size: 24px;
     line-height: 32px;                
     color: #7A7A7A; 
+    
   }
 
   /* .profile:hover {

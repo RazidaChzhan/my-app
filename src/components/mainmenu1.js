@@ -24,11 +24,11 @@ export default function AppMainMenu() {
     <ThemeProvider theme={theme}>
         <Typography className="backgroundimage">
         <Grid container>
-          <Grid item xs={1}></Grid>
-          <Grid item xs={2} style={{backgroundColor: '#FFFFFF', marginTop: '80px', borderRadius: '5px', padding: '25px', width: '441px', height: '399px'}}>
+          <Grid item xs={1} style={{paddingLeft: 270}}></Grid>
+          <Grid item xs={3} style={{backgroundColor: '#FFFFFF', marginTop: 85, borderRadius: 5, padding: 25, width: 405, height: 425}}>
             <Grid container spacing={10}>
                 <Grid item xs={3}>
-                <img src={avatar} alt={avatar} style={{paddingTop: '10px'}}></img>   
+                <img src={avatar} alt={avatar} style={{width: 64, height: 64, paddingLeft: 27, paddingTop: '10px'}}></img>   
                 </Grid>
                 <Grid item xs={8}>
                 <p><b>Иван Михайлов</b></p>
@@ -36,18 +36,18 @@ export default function AppMainMenu() {
                 </Grid>
             </Grid>
                 <hr></hr>
-                <Grid item={10}>
+                <Grid item={10} style={{paddingTop: 12, paddingLeft: 27, paddingBottom: 8}}>
                     <p>web.d3v@yandex.ru</p>
                     <p>+7 952 347-34-19</p>
                     <p><b>Тюмень</b></p>
                 </Grid>
                 <hr></hr>
-                <Grid item={10}>
+                <Grid item={10} style={{paddingTop: 3, paddingLeft: 27}}>
                 <p>Вы прошли: <b>0 треков</b></p>
                 <p>Активный трек: <b>1</b></p>
                 </Grid>
         </Grid> 
-        <Grid item xs={5} style={{marginTop: '65px'}}>
+        <Grid item xs={6} style={{marginTop: '65px'}}>
         <Grid container spacing={1} style={{marginLeft: '20px', marginBottom: '30px'}}>
             <Grid item xs={1}>
             <a className="linkbutton">Все</a>
@@ -74,9 +74,9 @@ export default function AppMainMenu() {
                 <span className="linktext">Английский язык</span>
             </Grid>
         </Grid>
-        <Grid container spacing={1} style={{backgroundColor: '#FFFFFF', marginLeft: '20px', marginTop: '20px', height: '90px', paddingTop: '15px'}}>
+        <Grid container spacing={1} style={{backgroundColor: '#FFFFFF', marginLeft: 20, marginTop: 20, height: 90, paddingTop: 15,  width: 927, height: 120}}>
             <Grid item xs={1}></Grid>
-            <Grid item xs={5} style={{paddingTop: '20px'}}>
+            <Grid item xs={5} style={{paddingTop: 20}}>
             <span><b>Социальное проектирование</b></span>
             </Grid>
             <Grid item xs={4} style={{paddingTop: '20px'}}>

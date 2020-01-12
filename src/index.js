@@ -9,9 +9,9 @@ import App from './App';
 const theme = createMuiTheme({
     typography: {
       fontFamily: [
-        '"Segoe UI"',
+        'Segoe UI',
         'Roboto',
-        '"Helvetica Neue"',
+        'Helvetica Neue',
         'Arial',
         'sans-serif',
         ].join(','),

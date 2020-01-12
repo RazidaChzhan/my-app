@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
      const StyledMenu = withStyles({
         paper: {
          background: '#FFFFFF',
-         width: '338px',
+         width: '345px',
          height: '152px'
         },
       })(props => (
@@ -84,27 +84,27 @@ const useStyles = makeStyles(theme => ({
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
                 <Grid container spacing={1}>
-                    <Grid item xs={1}></Grid>
+                    <Grid item xs={2}></Grid>
                     <Grid item xs={1}>
-                    <img className="headerimg" src={logoheader} alt={logoheader} style={{width: "114", height: "85"}}></img>
+                    <img className="headerimg" src={logoheader} alt={logoheader}></img>
                     </Grid>
-                    <Grid item xs={3} style={{marginLeft: '30px'}}>
-                    <p className="headertext">Образовательная <br></br>онлайн-платформа</p>
+                    <Grid item xs={2} style={{marginLeft: 30, borderLeft: '3px solid #2FA2BC', height: 64, marginTop: 22}}>
+                    <h1 className="headertext">Образовательная <br></br>онлайн-платформа</h1>
                     </Grid>
                 </Grid>
             </Typography>
             <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        onClick={handleClick}
-        style={{backgroundColor: '#802882', width: '337px', height: '100px', color: '#ffffff', textTransform: 'capitalize'}}        
-        >
+              aria-controls="customized-menu"
+              aria-haspopup="true"
+              variant="contained"
+              onClick={handleClick}
+              style={{backgroundColor: '#802882', width: 362, height: 110, color: '#ffffff', textTransform: 'capitalize', marginRight: 115}}        
+              >
         <Grid container spacing={1}>
-            <Grid item xs={2}>
-            <img src={avatar} alt={avatar}></img>
+            <Grid item xs={3}>
+            <img src={avatar} alt={avatar} style={{width: 64, height: 64, paddingLeft: 14, paddingTop: 8}}></img>
             </Grid>
-            <Grid item xs={6} style={{paddingTop: '20px'}}>
+            <Grid item xs={7} style={{paddingTop: 30, fontFamily: 'Segoe UI', fontSize: 18, paddingLeft: 10, lineHeight: '24px'}}>
             Иван Михайлов
             </Grid>
             <Grid item xs={2} style={{paddingTop: '20px'}}>

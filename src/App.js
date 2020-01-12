@@ -15,6 +15,7 @@ import { Link } from "@material-ui/core";
 import SocialDEsign from "./components/socialDesign";
 import './index.css';
 
+
 const packageJSON = [
   {
     name: "Профиль",
@@ -47,8 +48,8 @@ export default class App extends Component {
           <AppHeader/>
           {/* <SocialDEsign/> */}
           <ThemeProvider theme={theme}>
-          <Container style={{marginLeft: '160px', marginBottom: '20px'}}>
-          <h1>Личный кабинет</h1>
+          <Container style={{marginLeft: 240, marginBottom: 30}}>
+          <h1 style={{fontFamily: 'Segoe UI', fontStyle: 'bold', fontSize: 44, marginTop: 57, marginBottom: 65}}>Личный кабинет</h1>
           {packageJSON.map((item, index) => (
             <Link
               variant={
@@ -63,7 +64,7 @@ export default class App extends Component {
               underline="none"
               color="textSecondary"
               style={{
-                marginRight: '35px',
+                marginRight: 60, paddingBottom: 30
               }}
             >
               {item.name}
