@@ -73,10 +73,25 @@ code {
   background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
   border-radius: 100px;
   text-decoration: none;
-  color: #ffffff;
-  
+  color: #ffffff !important;
+  }
+
+.linkbutton {
+  width:70%;
+  height: 100%;
 }
 
+.linkbuttonpassed {
+  width:120%;
+  height: 100%;
+}
+
+.linkbuttonpassed:hover {
+  background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #ffffff !important;
+  }
 .activebutton {
   background: linear-gradient(90deg, #2797B6 0%, #54C5CF 100%), #2FA2BC;
   border-radius: 100px;
@@ -89,7 +104,6 @@ code {
   font-size: 18px;
   line-height: 24px;
   color: #2FA2BC;
-  margin-top: 10px;
 }
 
 .active-menu-item-text {
@@ -111,8 +125,9 @@ code {
 } 
 
 .hr {
-    text-shadow: none;
+    text-shadow: none;;
   }
+
 .profile {
     font-family: 'Segoe UI';
     font-size: 24px;
@@ -190,3 +205,13 @@ code {
     height: 30px;
   }
   
+  .textall {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+  }
