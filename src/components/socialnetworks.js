@@ -21,8 +21,8 @@ export default class SocialNetworks extends React.Component {
                     <p style={{fontFamily: 'Segoe UI', fontSize: '16px', lineHeight: '25px', 
                     color: 'rgba(34, 34, 34, 0.55)'}}>Вы можете связать свой профиль с профилями в социальных сетях и сервисах:</p>
                     <hr></hr>
-                    <Grid container spacing={1}>
-                        <Grid item xs={4}>
+                    <Grid container spacing={1} style={{paddingTop: 10}}>
+                        <Grid item xs={3}>
                             <Grid container>
                                 <Grid item xs={3}>
                                 <img  className="logo" src={logofacebookgrey} alt={logofacebookgrey}></img>
@@ -33,7 +33,7 @@ export default class SocialNetworks extends React.Component {
                             </Grid>
                            
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={3}>
                         <Grid container>
                                 <Grid item xs={3}>
                                 <img className="logo" src={logovkontaktegrey} alt={logovkontaktegrey}></img>

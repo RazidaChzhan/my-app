@@ -215,3 +215,13 @@ code {
     align-items: center;
     color: #222222;
   }
+
+  .leftmenu {
+    width: 440px!important;
+    height: 185px!important;
+  }
+
+  .rightmenu {
+    width: 927px!important;
+    height: 260px!important;
+  }

@@ -24,34 +24,34 @@ export default class SettingsMenu extends React.Component {
                 
                 <HashRouter>
                 
-               <Typography className="backgroundimage">
+               <Typography className="backgroundimage" style={{paddingBottom: 470}}>
                         <Grid container spacing={1}>
                             <Grid item xs={1}></Grid>
-                            <Grid item xs={2} 
-                            style={{backgroundColor: '#FFFFFF', marginTop: '80px', borderRadius: '5px', padding: '25px', width: '441px', height: '186px'}}>
-                                    
-                    <MenuList >
-                        <Link activeClassName="active-menu-item-text" className="linktext1" to="/main">
-                            <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 10}}>
-                            Основная информация
-                            </MenuItem>
-                        </Link>
-                        <Link  activeClassName="active-menu-item-text" className="linktext1" to="/socialnetworks">
-                            <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 10}}>
-                            Социальные сети
-                            </MenuItem>
-                        </Link>
-                        <Link  activeClassName="active-menu-item-text" className="linktext1" to="/changepassword">
-                            <MenuItem className="menuitemtext" style={{paddingTop: 10}}>
-                            Смена пароля
-                            </MenuItem>
-                        </Link>                  
-                    </MenuList>
-                   
+                            <Grid item xs={4}>
+                                <Grid container className="leftmenu"
+                                style={{backgroundColor: '#FFFFFF', marginLeft: 110, marginTop: '80px', borderRadius: '5px'}}>>
+                                    <MenuList style={{paddingLeft: 25}}>
+                                        <Link activeClassName="active-menu-item-text" className="linktext1" to="/main">
+                                            <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 20, paddingTop: 10}}>
+                                            Основная информация
+                                            </MenuItem>
+                                        </Link>
+                                        <Link  activeClassName="active-menu-item-text" className="linktext1" to="/socialnetworks">
+                                            <MenuItem className="menuitemtext" style={{borderBottom: '2px solid #D2D2D2', paddingBottom: 10, paddingBottom: 17, paddingTop: 20}}>
+                                            Социальные сети
+                                            </MenuItem>
+                                        </Link>
+                                        <Link  activeClassName="active-menu-item-text" className="linktext1" to="/changepassword">
+                                            <MenuItem className="menuitemtext" style={{paddingBottom: 20, paddingTop: 15}}>
+                                            Смена пароля
+                                            </MenuItem>
+                                        </Link>                  
+                                    </MenuList>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={6}
-                            style={{backgroundColor: '#ffffff', marginTop: '80px', marginLeft: '31px', borderRadius: '5px'}}>
+                            <Grid item xs={5}>
                                 {/* <Profilemenu/> */}
+                                <Grid container style={{backgroundColor: '#ffffff', marginTop: '80px', borderRadius: '5px', marginLeft: -50}} className="rightmenu">
                                 <Switch>
                                 <Route path="/main" component={Profilemenu}>
                                 </Route>
@@ -60,7 +60,8 @@ export default class SettingsMenu extends React.Component {
                                 <Route path="/changepassword" component={ChangePassword}>                                
                                 </Route>
                                 <Redirect to="/main" ></Redirect>
-                                </Switch>                                
+                                </Switch>    
+                                </Grid>                      
                             </Grid>
                         </Grid>   
                     </Typography>                 
