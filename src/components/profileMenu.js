@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core';
 
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
+import { Typography } from '@material-ui/core';
 
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -84,6 +85,7 @@ export default function ProfileMenu () {
     }, []);
 
 return (
+    <Typography>
     <Grid container spacing={1}>
         <Grid item xs={5} style={{borderRight: '2px solid #D2D2D2'}}>           
             <p className="maininformation" style={{marginLeft: 15}}>
@@ -232,5 +234,6 @@ return (
                 </Grid>  
             </Grid>
         </Grid>
+        </Typography>
     )
 }
